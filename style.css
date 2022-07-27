@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1, h2{
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    padding: 1%;
+}
+h1{
+    font-size: 48px;
+    padding: 1%;
+}
+h2{
+    font-size: 32px;
+    padding: 1%;
+}
+ul {
+    list-style: none;
+    padding: 2%;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 24px;
+    word-wrap: break-word;
+}
+
+.wrap{
+    width: 70% ;
+    margin: auto;
+}
+
+.card{
+    background-color: #DCE0D9;
+    padding: 24px;
+    margin: 24px 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.content{
+    color: rgba(0,0,0,0);
+    transition: 0.8s;
+    transition-delay: 1500s;
+}
+
+.card:hover .content{
+    color: rgba(0,0,0,1);
+    transition-delay: 0s;
+}
+
+.main_card{
+    color: rgba(0,0,0,1);
+}
+
+.profile-photo{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    padding: 24px;
+    transition: 0.7s;
+}
+
+.profile-photo:hover {
+    width: 35%;
+    height: 35%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.btn-link{
+    background-color: #187795;
+    color: rgb(240, 240, 240);
+    padding: 15px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.btn-link:hover{
+    background-color: #2589BD;
+    padding: 17px 17px;
+    color: rgb(240, 240, 240);
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+.inline-link{
+    display: inline;
+    padding: 0 15px;
+    font-size: 40px;
+    transition: 0.7s;
+    transition-property: font-size;
+}
+
+.inline-link:hover{
+    padding: 0 22px;
+    font-size: 56px;
+    color: rgb(125,125,125);
+}
+
+@media all and (max-width:30em){
+    .btn-link {
+        display: block;
+        margin: 0.3em auto;
+    }
+}
