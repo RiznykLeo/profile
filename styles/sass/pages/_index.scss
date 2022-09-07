@@ -12,16 +12,32 @@ h2{
   font-size: 2rem;
 }
 
-.head{
-  margin-top: 2rem;
+
+.headers{
+  max-width: 70%;
+  .head{
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  .subhead{
+    padding-left: 20%;
+    font-family: 'Tiro Bangla', serif;
+    font-style: italic;
+    font-size: 2.75rem;
+  }
 }
-.accent{
-  font-family: 'Tiro Bangla', serif;
-  font-style: italic;
-}
+
 .text-block{
+  font-size: 1.25rem;
   margin-top: 2rem;
-  max-width: 30%;
+  max-width: 40%;
+  p{
+    padding-top: 1rem;
+  }
+  .accent{
+    font-family: 'Tiro Bangla', serif;
+    font-size: 1.5rem;
+  }
 }
 
 
