@@ -1,0 +1,74 @@
+@import "../utilities/variables";
+.background{
+  background: $background;
+}
+h1,h2,p{
+  color: $font-color;
+}
+h1{
+  font-size: 3rem ;
+}
+h2{
+  font-size: 2rem;
+}
+
+
+.headers{
+  max-width: 70%;
+  .head{
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  .subhead{
+    padding-left: 20%;
+    font-family: 'Tiro Bangla', serif;
+    font-style: italic;
+    font-size: 2.75rem;
+  }
+}
+
+.text-block{
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  max-width: 40%;
+  p{
+    padding-top: 1rem;
+  }
+  .accent{
+    font-family: 'Tiro Bangla', serif;
+    font-size: 1.5rem;
+  }
+}
+
+
+.info-right{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    writing-mode: vertical-rl;
+  a{
+    color: rgba(255,255,255,0.6);
+    transition: 100ms;
+    &:hover{
+      color: rgba(255,255,255,1);
+    }
+  }
+}
+
+.info-left{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  a{
+    color: rgba(255,255,255,0.6);
+    transition: 100ms;
+    &:hover{
+      color: rgba(255,255,255,1);
+    }
+  }
+}
+

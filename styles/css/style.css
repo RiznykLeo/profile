@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.background {
+  background: #3E1333;
+}
+
+h1, h2, p {
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.headers {
+  max-width: 70%;
+}
+.headers .head {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.headers .subhead {
+  padding-left: 20%;
+  font-family: "Tiro Bangla", serif;
+  font-style: italic;
+  font-size: 2.75rem;
+}
+
+.text-block {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  max-width: 40%;
+}
+.text-block p {
+  padding-top: 1rem;
+}
+.text-block .accent {
+  font-family: "Tiro Bangla", serif;
+  font-size: 1.5rem;
+}
+
+.info-right {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  writing-mode: vertical-rl;
+}
+.info-right a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 100ms;
+}
+.info-right a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.info-left {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 1.5rem;
+}
+.info-left a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 100ms;
+}
+.info-left a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container-main {
+  padding: 0 2rem 0 2rem;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container-page {
+  padding: 0 4rem 0 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem 0 0 0;
+  padding-right: 5rem;
+  width: 100%;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav .link {
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+.nav .link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*# sourceMappingURL=style.css.map */
