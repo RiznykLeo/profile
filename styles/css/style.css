@@ -109,11 +109,7 @@ h1, h2, h3, p, span {
   object-fit: cover;
 }
 .about .skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  padding-top: 3rem;
-  font-size: 1.25rem;
+  color: white;
 }
 
 .limit70 {
@@ -126,6 +122,14 @@ h1, h2, h3, p, span {
 
 .top {
   margin-top: 7rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+.skills .tagcloud .tagcloud-item:hover {
+  font-size: 1.25rem;
 }
 
 .container-main {

@@ -114,11 +114,7 @@ h1, h2, h3, p, span, {
   }
 
   .skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    padding-top: 3rem;
-    font-size: 1.25rem;
+    color: white;
   }
 }
 
@@ -133,5 +129,21 @@ h1, h2, h3, p, span, {
 .top {
   margin-top: 7rem;
 }
+
+.skills {
+  display: flex;
+  justify-content: center;
+
+  .tagcloud {
+
+    .tagcloud-item {
+
+      &:hover {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
 
 
