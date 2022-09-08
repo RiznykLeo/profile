@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "sass": "^1.54.8"
+    "sass": "^1.54.8",
+    "TagCloud": "^2.2.0"
   },
   "scripts": {
     "sass": "sass styles/sass/main.scss styles/css/style.css -w"
