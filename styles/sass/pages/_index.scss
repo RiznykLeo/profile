@@ -98,6 +98,7 @@ h1, h2, h3, p, span, {
 }
 
 .about {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
@@ -137,6 +138,12 @@ h1, h2, h3, p, span, {
     .skills {
       color: white;
     }
+  }
+}
+
+#about {
+  p {
+    font-size: 3rem;
   }
 }
 
