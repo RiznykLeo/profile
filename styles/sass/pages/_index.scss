@@ -104,17 +104,39 @@ h1, h2, h3, p, span, {
   .photo {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
     margin-top: 3rem;
+
+    transition: 300ms;
 
     img {
       max-width: 15rem;
       max-height: 18rem;
       object-fit: cover;
+
+      border-radius: 0.25rem;
+      filter: grayscale(100%);
+      transition: 400ms ease-out 500ms;
+
+      &:hover {
+        filter: none;
+        scale: 110%;
+        transition: 400ms ease-out 0s;
+      }
     }
+
+
   }
 
-  .skills {
-    color: white;
+  .stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .skills {
+      color: white;
+    }
   }
 }
 
@@ -127,7 +149,7 @@ h1, h2, h3, p, span, {
 }
 
 .top {
-  margin-top: 7rem;
+  padding-top: 12rem;
 }
 
 .skills {

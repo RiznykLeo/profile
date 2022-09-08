@@ -6,9 +6,14 @@ const mySkills = [
 ];
 
 TagCloud(".skills", mySkills, {
-    radius: 180,
+    radius: 160,
     maxSpeed: 'normal',
-    initSpeed: 'normal',
+    initSpeed: 'slow',
     direction: 135,
     keep: true
 });
+
+
+
+
+
