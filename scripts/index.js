@@ -4,7 +4,6 @@ const mySkills = [
     'Figma', 'PostgresSQL', 'Heroku',
     'Javascript', 'Github', 'Ruby on Rails',
 ];
-
 TagCloud(".skills", mySkills, {
     radius: 160,
     maxSpeed: 'normal',
@@ -13,7 +12,16 @@ TagCloud(".skills", mySkills, {
     keep: true
 });
 
+const nav = document.querySelector(".nav")
 
+window.onscroll = (event) => {
 
+    // print "false" if direction is down and "true" if up
+    const scroll = this.oldScroll > this.scrollY;
+
+    scroll ? nav.classList.remove("scroll-up") : nav.classList.add("scroll-up");
+
+    this.oldScroll = this.scrollY;
+}
 
 
