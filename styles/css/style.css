@@ -6,6 +6,7 @@
 html {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -173,6 +174,7 @@ h1, h2, h3, p, span {
   width: 100%;
   background: rgba(62, 19, 51, 0.7);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: 500ms;
 }
 .nav a {
   text-decoration: none;
@@ -184,6 +186,10 @@ h1, h2, h3, p, span {
 }
 .nav .link:hover {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-up {
+  top: -10rem;
 }
 
 /*# sourceMappingURL=style.css.map */
