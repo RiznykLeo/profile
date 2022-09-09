@@ -1,6 +1,6 @@
 const mySkills = [
     'HTML', 'CSS', 'SCSS',
-    'Bootstrap', 'Git', 'React',
+    'Bootstrap', 'Git',
     'Figma', 'PostgresSQL', 'Heroku',
     'Javascript', 'Github', 'Ruby on Rails',
 ];

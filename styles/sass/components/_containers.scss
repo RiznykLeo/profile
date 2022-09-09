@@ -3,7 +3,7 @@
 .container-main {
   padding: 0 $cnt-mn 0 $cnt-mn;
   position: relative;
-  min-height: 100vh;
+  min-height: 10vh;
 }
 
 .container-page {
@@ -11,5 +11,5 @@
 }
 
 .vertical-container {
-  height: 100vh;
+  min-height: 100vh;
 }
