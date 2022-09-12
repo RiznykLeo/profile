@@ -257,7 +257,7 @@ h1, h2, h3, p, span {
   font-size: 1.5rem;
 }
 .contact-info .contact-buttons {
-  margin-top: 4rem;
+  margin-top: 8rem;
   display: flex;
   justify-content: space-around;
 }
