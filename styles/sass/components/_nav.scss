@@ -10,7 +10,7 @@
   right: 0;
   top: 0; //on scroll make -10rem
 
-  padding: 1rem 5rem 1rem 0;
+  padding: 1rem 4rem 1rem 0;
   width: 100%;
 
   background: rgba(62, 19, 51, 0.7);
@@ -32,8 +32,23 @@
 
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
+
+  .resume {
+    text-align: center;
+    margin-left: 2rem;
+    padding: 0.75rem;
+    color: $link;
+    border: solid 2px white;
+    width: 5rem;
+    transition: 100ms;
+
+    &:hover {
+      background: white;
+      color: #3E1333;
+    }
+  }
 }
 
 .scroll-up {
-  top: -10rem;
+  top: -6rem;
 }

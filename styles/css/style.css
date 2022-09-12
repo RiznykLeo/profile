@@ -311,7 +311,7 @@ footer {
   position: fixed;
   right: 0;
   top: 0;
-  padding: 1rem 5rem 1rem 0;
+  padding: 1rem 4rem 1rem 0;
   width: 100%;
   background: rgba(62, 19, 51, 0.7);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
@@ -328,9 +328,22 @@ footer {
 .nav .link:hover {
   color: rgba(255, 255, 255, 0.7);
 }
+.nav .resume {
+  text-align: center;
+  margin-left: 2rem;
+  padding: 0.75rem;
+  color: rgb(255, 255, 255);
+  border: solid 2px white;
+  width: 5rem;
+  transition: 100ms;
+}
+.nav .resume:hover {
+  background: white;
+  color: #3E1333;
+}
 
 .scroll-up {
-  top: -10rem;
+  top: -6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
