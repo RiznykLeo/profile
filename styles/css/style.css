@@ -248,6 +248,10 @@ h1, h2, h3, p, span {
   opacity: 1;
 }
 
+.contact {
+  min-height: 80vh;
+}
+
 .contact-info .text-block {
   text-align: center;
   font-size: 1.5rem;
@@ -276,6 +280,13 @@ h1, h2, h3, p, span {
 }
 .contact-info .contact-buttons .button .icon {
   font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .container-main {

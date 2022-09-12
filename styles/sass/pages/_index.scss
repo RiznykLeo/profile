@@ -287,6 +287,10 @@ h1, h2, h3, p, span, {
   }
 }
 
+.contact {
+  min-height: 80vh;
+}
+
 .contact-info {
   .text-block {
     text-align: center;
@@ -326,4 +330,10 @@ h1, h2, h3, p, span, {
   }
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  padding: 2rem;
+}
