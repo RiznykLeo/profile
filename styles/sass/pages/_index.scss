@@ -141,7 +141,7 @@ h1, h2, h3, p, span, {
   }
 }
 
-#about, #works {
+#about, #works, #contact {
   p {
     font-size: 3rem;
   }
@@ -282,6 +282,45 @@ h1, h2, h3, p, span, {
         &:hover {
           opacity: 1;
         }
+      }
+    }
+  }
+}
+
+.contact-info {
+  .text-block {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contact-buttons {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+
+    .button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      width: 12rem;
+      border: solid 1px white;
+
+      transition: 250ms;
+
+      &:hover {
+        background: white;
+        border: solid 1px #3E1333;
+
+        span {
+          color: #3E1333;
+        }
+      }
+
+      .icon {
+        font-size: 2rem;
       }
     }
   }

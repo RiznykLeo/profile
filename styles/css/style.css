@@ -130,7 +130,7 @@ h1, h2, h3, p, span {
   color: white;
 }
 
-#about p, #works p {
+#about p, #works p, #contact p {
   font-size: 3rem;
 }
 
@@ -248,10 +248,40 @@ h1, h2, h3, p, span {
   opacity: 1;
 }
 
+.contact-info .text-block {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.contact-info .contact-buttons {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-info .contact-buttons .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  width: 12rem;
+  border: solid 1px white;
+  transition: 250ms;
+}
+.contact-info .contact-buttons .button:hover {
+  background: white;
+  border: solid 1px #3E1333;
+}
+.contact-info .contact-buttons .button:hover span {
+  color: #3E1333;
+}
+.contact-info .contact-buttons .button .icon {
+  font-size: 2rem;
+}
+
 .container-main {
   padding: 0 2rem 0 2rem;
   position: relative;
-  min-height: 10vh;
+  min-height: 100vh;
 }
 
 .container-page {
