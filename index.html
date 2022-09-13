@@ -29,14 +29,17 @@
 
     <title>Riznyk Leonid Profile</title>
 </head>
-<body class="background">
+<body class="background" onscroll=navScroll() onload=skills()>
 <div class="container-main">
     <div class="container-page">
         <nav class="nav">
-            <a class="link" href="#about">About.</a>
-            <a class="link" href="#works">Works.</a>
-            <a class="link" href="#contact">Contact.</a>
-            <a class="resume" href="documents/resume.pdf">Resume</a>
+            <a class="link nav-about" href="#about">About.</a>
+            <a class="link nav-works" href="#works">Works.</a>
+            <a class="link nav-contact" href="#contact">Contact.</a>
+            <a class="resume" href="documents/resume.pdf" target="_blank">Resume</a>
+            <a href="javascript:void(0);" class="icon" onclick="burger()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <div class="vertical-container top">
             <div class="headers">
@@ -216,7 +219,6 @@
                 </ul>
             </div>
         </div>
-
         <footer>
             <a href="https://github.com/RiznykLeo">
                 <p>Built by Riznyk Leonid</p>
