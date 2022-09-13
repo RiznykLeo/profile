@@ -1,5 +1,55 @@
 @import "../utilities/variables";
 
+@mixin works-resp {
+  .work {
+    grid-template-rows: 1fr 1fr 0.25fr;
+
+    .description {
+      grid-row: 1/1;
+      grid-column: 1/-1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .headers {
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .summary {
+        grid-column: 1/-1;
+      }
+    }
+
+    .images {
+      grid-column: 1/-1;
+      grid-row: 2/2;
+    }
+
+    .technologies {
+      grid-column: 1/-1;
+      grid-row: 3/3;
+
+      display: grid;
+      grid-template-rows: 1.5fr 1fr;
+      margin: 0;
+
+      .technology {
+        grid-row: 1/1;
+        font-size: 1rem;
+      }
+
+      .link {
+        font-size: 1.5rem;
+        justify-content: space-between;
+        grid-row: 2/2;
+      }
+    }
+  }
+}
+
 h1, h2, h3, p, span, {
   color: $font-color;
 }
@@ -378,53 +428,7 @@ footer {
     }
   }
   .works {
-    .work {
-      grid-template-rows: 1fr 1fr 0.25fr;
-
-      .description {
-        grid-row: 1/1;
-        grid-column: 1/-1;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        .headers {
-          grid-column: 1/-1;
-          display: flex;
-          justify-content: center;
-        }
-
-        .summary {
-          grid-column: 1/-1;
-        }
-      }
-
-      .images {
-        grid-column: 1/-1;
-        grid-row: 2/2;
-      }
-
-      .technologies {
-        grid-column: 1/-1;
-        grid-row: 3/3;
-
-        display: grid;
-        grid-template-rows: 1.5fr 1fr;
-        margin: 0;
-
-        .technology {
-          grid-row: 1/1;
-          font-size: 1rem;
-        }
-
-        .link {
-          font-size: 1.5rem;
-          justify-content: space-between;
-          grid-row: 2/2;
-        }
-      }
-    }
+    @include works-resp
   }
   .info {
     display: none
@@ -457,6 +461,9 @@ footer {
     .stack {
       grid-row: 2/2;
     }
+  }
+  .works {
+    @include works-resp
   }
 }
 

@@ -385,6 +385,44 @@ footer {
   .about .stack {
     grid-row: 2/2;
   }
+  .works .work {
+    grid-template-rows: 1fr 1fr 0.25fr;
+  }
+  .works .work .description {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .works .work .description .headers {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+  }
+  .works .work .description .summary {
+    grid-column: 1/-1;
+  }
+  .works .work .images {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+  }
+  .works .work .technologies {
+    grid-column: 1/-1;
+    grid-row: 3/3;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    margin: 0;
+  }
+  .works .work .technologies .technology {
+    grid-row: 1/1;
+    font-size: 1rem;
+  }
+  .works .work .technologies .link {
+    font-size: 1.5rem;
+    justify-content: space-between;
+    grid-row: 2/2;
+  }
 }
 .container-main {
   padding: 0 2rem 0 2rem;
