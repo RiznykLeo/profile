@@ -1,4 +1,5 @@
 const nav = document.querySelector(".nav")
+const head = document.querySelector(".headers")
 
 function skills() {
     const mySkills = [
@@ -27,8 +28,10 @@ function navScroll() {
 function burger() {
     if (nav.classList.contains("responsive")) {
         nav.classList.remove("responsive")
+        head.classList.remove("top-add")
     } else {
         nav.classList.add("responsive")
+        head.classList.add("top-add")
     }
 }
 
