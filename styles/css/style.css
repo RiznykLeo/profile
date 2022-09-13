@@ -56,6 +56,7 @@ h1, h2, h3, p, span {
 .text-block {
   font-size: 1.25rem;
   margin-top: 2rem;
+  max-width: 40%;
 }
 .text-block p {
   padding-top: 1rem;
@@ -63,36 +64,6 @@ h1, h2, h3, p, span {
 .text-block .accent {
   font-family: "Tiro Bangla", serif;
   font-size: 1.5rem;
-}
-
-.info .info-right {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  writing-mode: vertical-rl;
-}
-.info .info-right a {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 100ms;
-}
-.info .info-right a:hover {
-  color: rgb(255, 255, 255);
-}
-.info .info-left {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  position: fixed;
-  left: 2rem;
-  bottom: 2rem;
-  font-size: 1.5rem;
-}
-.info .info-left a {
-  color: rgba(255, 255, 255, 0.6);
-  transition: 100ms;
-}
-.info .info-left a:hover {
-  color: rgb(255, 255, 255);
 }
 
 .about {
@@ -134,16 +105,8 @@ h1, h2, h3, p, span {
   font-size: 3rem;
 }
 
-.limit70 {
-  max-width: 70%;
-}
-
-.limit40 {
-  max-width: 40%;
-}
-
 .top {
-  padding-top: 12rem;
+  padding-top: 6rem;
 }
 
 .center {
@@ -282,6 +245,36 @@ h1, h2, h3, p, span {
   font-size: 2rem;
 }
 
+.info .info-right {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  writing-mode: vertical-rl;
+}
+.info .info-right a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 100ms;
+}
+.info .info-right a:hover {
+  color: rgb(255, 255, 255);
+}
+.info .info-left {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  font-size: 1.5rem;
+}
+.info .info-left a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 100ms;
+}
+.info .info-left a:hover {
+  color: rgb(255, 255, 255);
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -289,6 +282,40 @@ footer {
   padding: 2rem;
 }
 
+@media screen and (max-width: 700px) {
+  .top-add {
+    padding-top: 12rem;
+  }
+  .headers {
+    transition: 150ms;
+  }
+  .headers h1 {
+    font-size: 2.25rem;
+  }
+  .headers h2 {
+    font-size: 2rem;
+  }
+  .headers .head {
+    font-size: 2.5rem;
+  }
+  .headers .subhead {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .text-block {
+    max-width: 100%;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about .photo:hover {
+    scale: 125%;
+  }
+  .info {
+    display: none;
+  }
+}
 .container-main {
   padding: 0 2rem 0 2rem;
   position: relative;
@@ -303,6 +330,11 @@ footer {
   min-height: 100vh;
 }
 
+@media screen and (max-width: 700px) {
+  .vertical-container {
+    min-height: 100%;
+  }
+}
 .nav {
   display: grid;
   grid-template-columns: 50% repeat(6, 1fr);
@@ -366,7 +398,7 @@ footer {
 
 @media screen and (max-width: 700px) {
   .nav {
-    padding-left: 5rem;
+    padding-right: 4rem;
   }
   .nav a {
     display: none;

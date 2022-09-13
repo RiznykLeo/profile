@@ -47,7 +47,7 @@ h1, h2, h3, p, span, {
 .text-block {
   font-size: 1.25rem;
   margin-top: 2rem;
-
+  max-width: 40%;
 
   p {
     padding-top: 1rem;
@@ -59,43 +59,6 @@ h1, h2, h3, p, span, {
   }
 }
 
-.info {
-
-  .info-right {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    writing-mode: vertical-rl;
-
-    a {
-      color: rgba(255, 255, 255, 0.6);
-      transition: 100ms;
-
-      &:hover {
-        color: rgba(255, 255, 255, 1);
-      }
-    }
-  }
-
-  .info-left {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    position: fixed;
-    left: 2rem;
-    bottom: 2rem;
-    font-size: 1.5rem;
-
-    a {
-      color: rgba(255, 255, 255, 0.6);
-      transition: 100ms;
-
-      &:hover {
-        color: rgba(255, 255, 255, 1);
-      }
-    }
-  }
-}
 
 .about {
   margin-top: 3rem;
@@ -126,8 +89,6 @@ h1, h2, h3, p, span, {
         transition: 400ms ease-out 0s;
       }
     }
-
-
   }
 
   .stack {
@@ -147,16 +108,8 @@ h1, h2, h3, p, span, {
   }
 }
 
-.limit70 {
-  max-width: 70%;
-}
-
-.limit40 {
-  max-width: 40%;
-}
-
 .top {
-  padding-top: 12rem;
+  padding-top: 6rem;
 }
 
 .center {
@@ -330,10 +283,94 @@ h1, h2, h3, p, span, {
   }
 }
 
+.info {
+
+  .info-right {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    writing-mode: vertical-rl;
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      transition: 100ms;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .info-left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    font-size: 1.5rem;
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
+      transition: 100ms;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
 
   padding: 2rem;
+}
+
+
+@media screen and (max-width: 700px) {
+  .top-add {
+    padding-top: 12rem;
+  }
+  .headers {
+    transition: 150ms;
+
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .head {
+      font-size: 2.5rem;
+    }
+
+    .subhead {
+      padding-left: 0;
+      font-size: 2rem;
+    }
+  }
+  .text-block {
+    max-width: 100%;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    .photo {
+      &:hover {
+        scale: 125%;
+      }
+    }
+  }
+
+
+  .info {
+    display: none
+  }
+
 }
