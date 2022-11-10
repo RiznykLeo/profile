@@ -3,10 +3,11 @@ const head = document.querySelector(".headers")
 
 function skills() {
     const mySkills = [
-        'HTML', 'CSS', 'SCSS',
-        'Bootstrap', 'Git',
-        'Figma', 'PostgresSQL', 'Heroku',
-        'Javascript', 'Github', 'Ruby on Rails',
+        'React', 'CSS', 'Tailwind',
+        'TypeScript', 'SCSS',
+        'Figma', 'JavaScript', 'HTML', 'Git',
+        'Bootstrap', 'Firebase', 'Axios',
+
     ];
     TagCloud(".skills", mySkills, {
         radius: 160,
